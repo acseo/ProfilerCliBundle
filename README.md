@@ -1,5 +1,7 @@
 # Symfony Profiler CLI Command
 
+<img src="https://socialify.git.ci/acseo/ProfilerCliBundle/image?description=1&font=Inter&language=1&name=1&owner=1&stargazers=1&theme=Auto" alt="ProfilerCliBundle" width="100%" />
+
 This Symfony bundle provides a CLI command that interacts with the Symfony Profiler. It allows users to display the details of profiler tokens, export `curl` commands for HTTP requests, and interact with profiler data in an efficient and flexible way.
 
 ## Features
@@ -54,10 +56,10 @@ You can filter the tokens by using the following options:
 
 - `--ip`: Filter by IP address
 - `--url`: Filter by URL
-- `--method`: Filter by HTTP method (e.g., GET, POST)
-- `--limit`: Specify the number of tokens to retrieve (default is 10)
-`--start`: Specify a start date in Y-m-d H:i:s format
-`--end`: Specify an end date in Y-m-d H:i:s format
+- `--method`: Filter by HTTP method (e.g., `GET`, `POST`)
+- `--limit`: Specify the number of tokens to retrieve (default is `10`)
+- `--start`: Specify a start date in `Y-m-d H:i:s` format
+- `--end`: Specify an end date in `Y-m-d H:i:s` format
 
 Example:
 
@@ -73,17 +75,17 @@ You can directly display the details of a specific token by passing the `--token
 php bin/console acseo:profiler-cli --token=abc123
 ```
 
-This will display the HTTP request information, including headers, request body, and the generated curl command.
+This will display the HTTP request information, including headers, request body, and the generated `curl` command.
 
 ### Export curl Command
 
-To export the `curl` command for a specific token, use both the --token and --export options together:
+To export the `curl` command for a specific token, use both the `--token` and `--export` options together:
 
 ```bash
 php bin/console acseo:profiler-cli --token=abc123 --export
 ```
 
-This will generate a file in the format `curl_YmdHis-abc123.txt` containing the curl command.
+This will generate a file in the format `curl_YmdHis-abc123.txt` containing the `curl` command.
 
 You can also export the `curl` commands for all retrieved tokens:
 
