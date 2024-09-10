@@ -1,0 +1,33 @@
+{
+    "name": "acseo/profiler-cli",
+    "description": "Symfony CLI command for interacting with the Symfony Profiler, displaying and exporting HTTP requests as curl commands.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Potier",
+            "email": "nicolas.potier@acseo.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "symfony/console": "^5.0 || ^6.0",
+        "symfony/http-kernel": "^5.0 || ^6.0",
+        "symfony/profiler-pack": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ACSEO\\ProfilerCliBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        },
+        "symfony": {
+            "allow-contrib": true,
+            "require": "5.* || 6.*"
+        }
+    },
+    "minimum-stability": "stable"
+}
